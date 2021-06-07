@@ -8,6 +8,16 @@ Full games from [Code-the-Classics](https://github.com/thisarray/Code-the-Classi
 - [Myriapod](Code-the-Classics/myriapod-master/myriapod.html) Centipede clone
 - [Substitute Soccer](Code-the-Classics/soccer-master/soccer.html)
 
+Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](https://github.com/thisarray/inventwithpython3rded):
+[Read the 4th Edition online](https://inventwithpython.com/invent4thed/).
+
+- [Hello world! from chapter 17](inventwithpython3rded/pygameHelloWorld.html)
+- [Animation from chapter 17](inventwithpython3rded/animation.html)
+- [Collision Detection from chapter 18](inventwithpython3rded/collisionDetection.html)
+- [Input from chapter 18](inventwithpython3rded/pygameInput.html)
+- [Sprites and Sound from chapter 19](inventwithpython3rded/spritesAndSounds.html)
+- [Dodger from chapter 20](inventwithpython3rded/dodger.html)
+
 Code examples from the Source Code column in [Wireframe magazine](https://wfmag.cc):
 
 - [Wireframe 1](Wireframe-1/explosion.html) The genius behind Defender's explosions
@@ -63,3 +73,6 @@ Code examples from the Source Code column in [Wireframe magazine](https://wfmag.
 - [Wireframe 48](Wireframe-48/source-code-pitfall/pitfall.html) Swing into action with an homage to Pitfall!
 - [Wireframe 49](Wireframe-49/manic-miner-source-code/manicminer.html) Remake Manic Miner's crumbling platforms
 - [Wireframe 50](Wireframe-50/source-code-galaxian/galaxian.html) Recreate Galaxian's iconic attack patterns
+- [Wireframe 51 Snake AI](Wireframe-51/snake-maze-code/snake_ai.html) Snakes, and an introduction to recursive backtracking
+- [Wireframe 51 Snake AI minimal](Wireframe-51/snake-maze-code/snake_ai_minimal.html) Snakes, and an introduction to recursive backtracking
+- [Wireframe 51](Wireframe-51/exerion-source-code/exerion.html) Recreate Exerion's pseudo-3D landscape
