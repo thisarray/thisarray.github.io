@@ -8,8 +8,40 @@ Full games from [Code-the-Classics](https://github.com/thisarray/Code-the-Classi
 - [Myriapod](Code-the-Classics/myriapod-master/myriapod.html) Centipede clone
 - [Substitute Soccer](Code-the-Classics/soccer-master/soccer.html)
 
+Full games from [Making Games with Python &amp; Pygame](https://github.com/thisarray/making-games-with-python-and-pygame):
+
+Chapter 1 - Installing Python and Pygame
+
+Chapter 2 - Pygame Basics
+- [blankpygame](making-games-with-python-and-pygame/blankpygame/blankpygame.html)
+- [drawing](making-games-with-python-and-pygame/blankpygame/drawing.html)
+- [catanimation](making-games-with-python-and-pygame/catanimation/catanimation.html)
+- [fonttext](making-games-with-python-and-pygame/blankpygame/fonttext.html)
+
+[Chapter 3 - Memory Puzzle](making-games-with-python-and-pygame/memorypuzzle/memorypuzzle.html)
+
+[Chapter 4 - Slide Puzzle](making-games-with-python-and-pygame/slidepuzzle/slidepuzzle.html)
+
+[Chapter 5 - Simulate](making-games-with-python-and-pygame/simulate/simulate.html)
+
+[Chapter 6 - Wormy](making-games-with-python-and-pygame/wormy/wormy.html)
+
+Chapter 7 - Tetromino
+- [tetromino](making-games-with-python-and-pygame/tetromino/tetromino.html)
+- [pentomino](making-games-with-python-and-pygame/tetromino/pentomino.html)
+- [tetrominoforidiots](making-games-with-python-and-pygame/tetromino/tetrominoforidiots.html)
+
+[Chapter 8 - Squirrel Eat Squirrel](making-games-with-python-and-pygame/squirrel/squirrel.html)
+
+[Chapter 9 - Star Pusher](making-games-with-python-and-pygame/starpusher/starpusher.html)
+
+Chapter 10 - Four Extra Games
+- [flippy](making-games-with-python-and-pygame/flippy/flippy.html) - An "Othello" clone where the player tries to flip the computer AI player's tiles.
+- [inkspill](making-games-with-python-and-pygame/inkspill/inkspill.html) - A "Flood It" clone that makes use of the flood fill algorithm.
+- [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player.
+- [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row.
+
 Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](https://github.com/thisarray/inventwithpython3rded):
-[Read the 4th Edition online](https://inventwithpython.com/invent4thed/).
 
 - [Hello world! from chapter 17](inventwithpython3rded/pygameHelloWorld.html)
 - [Animation from chapter 17](inventwithpython3rded/animation.html)
@@ -17,6 +49,8 @@ Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](htt
 - [Input from chapter 18](inventwithpython3rded/pygameInput.html)
 - [Sprites and Sound from chapter 19](inventwithpython3rded/spritesAndSounds.html)
 - [Dodger from chapter 20](inventwithpython3rded/dodger.html)
+
+[Read the 4th Edition online](https://inventwithpython.com/invent4thed/).
 
 Code examples from the Source Code column in [Wireframe magazine](https://wfmag.cc):
 
@@ -76,3 +110,4 @@ Code examples from the Source Code column in [Wireframe magazine](https://wfmag.
 - [Wireframe 51 Snake AI](Wireframe-51/snake-maze-code/snake_ai.html) Snakes, and an introduction to recursive backtracking
 - [Wireframe 51 Snake AI minimal](Wireframe-51/snake-maze-code/snake_ai_minimal.html) Snakes, and an introduction to recursive backtracking
 - [Wireframe 51](Wireframe-51/exerion-source-code/exerion.html) Recreate Exerion's pseudo-3D landscape
+- [Wireframe 52](Wireframe-52/source-code-gradius/gradius.html) Recreate Gradius's rock-spewing volcanoes
