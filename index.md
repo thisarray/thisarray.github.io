@@ -1,6 +1,6 @@
 # JavaScript ports using [jsgame0.js](https://github.com/thisarray/jsgame0)
 
-Full games from [Code-the-Classics](https://github.com/thisarray/Code-the-Classics):
+## Full games from [Code-the-Classics](https://github.com/thisarray/Code-the-Classics):
 
 - [Boing!](Code-the-Classics/boing-master/boing.html) Pong clone
 - [Cavern](Code-the-Classics/cavern-master/cavern.html) Bubble Bubble clone
@@ -8,7 +8,7 @@ Full games from [Code-the-Classics](https://github.com/thisarray/Code-the-Classi
 - [Myriapod](Code-the-Classics/myriapod-master/myriapod.html) Centipede clone
 - [Substitute Soccer](Code-the-Classics/soccer-master/soccer.html)
 
-Full games from [Making Games with Python &amp; Pygame](https://github.com/thisarray/making-games-with-python-and-pygame):
+## Full games from [Making Games with Python &amp; Pygame](https://github.com/thisarray/making-games-with-python-and-pygame):
 
 Chapter 1 - Installing Python and Pygame
 
@@ -41,7 +41,7 @@ Chapter 10 - Four Extra Games
 - [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player.
 - [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row.
 
-Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](https://github.com/thisarray/inventwithpython3rded):
+## Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](https://github.com/thisarray/inventwithpython3rded):
 
 - [Hello world! from chapter 17](inventwithpython3rded/pygameHelloWorld.html)
 - [Animation from chapter 17](inventwithpython3rded/animation.html)
@@ -52,7 +52,7 @@ Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](htt
 
 [Read the 4th Edition online](https://inventwithpython.com/invent4thed/).
 
-Code examples from the Source Code column in [Wireframe magazine](https://wfmag.cc):
+## Code examples from the Source Code column in [Wireframe magazine](https://wfmag.cc):
 
 - [Wireframe 1](Wireframe-1/explosion.html) The genius behind Defender's explosions
 - [Wireframe 2](Wireframe-2/galaxian.html) Galaxian's dive-bombing aliens
@@ -111,3 +111,4 @@ Code examples from the Source Code column in [Wireframe magazine](https://wfmag.
 - [Wireframe 51 Snake AI minimal](Wireframe-51/snake-maze-code/snake_ai_minimal.html) Snakes, and an introduction to recursive backtracking
 - [Wireframe 51](Wireframe-51/exerion-source-code/exerion.html) Recreate Exerion's pseudo-3D landscape
 - [Wireframe 52](Wireframe-52/source-code-gradius/gradius.html) Recreate Gradius's rock-spewing volcanoes
+- [Wireframe 53](Wireframe-53/source-code-pinball/pinball.html) Code your own pinball video game
