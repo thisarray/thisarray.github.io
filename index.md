@@ -28,8 +28,10 @@ Chapter 2 - Pygame Basics
 
 Chapter 7 - Tetromino
 - [tetromino](making-games-with-python-and-pygame/tetromino/tetromino.html)
-- [pentomino](making-games-with-python-and-pygame/tetromino/pentomino.html)
-- [tetrominoforidiots](making-games-with-python-and-pygame/tetromino/tetrominoforidiots.html)
+- [pentomino](making-games-with-python-and-pygame/tetromino/pentomino.html) - A version of Tetromino using pieces made from 5 boxes.
+- [tetrominoforidiots](making-games-with-python-and-pygame/tetromino/tetrominoforidiots.html) - A version of Tetromino using pieces made from 1 box.
+- [tromino](making-games-with-python-and-pygame/tetromino/tromino.html) - A version of Tetromino using pieces made from 3 boxes.
+- [domino](making-games-with-python-and-pygame/tetromino/domino.html) - A version of Tetromino using pieces made from 2 boxes.
 
 [Chapter 8 - Squirrel Eat Squirrel](making-games-with-python-and-pygame/squirrel/squirrel.html)
 
@@ -111,4 +113,5 @@ Chapter 10 - Four Extra Games
 - [Wireframe 51 Snake AI minimal](Wireframe-51/snake-maze-code/snake_ai_minimal.html) Snakes, and an introduction to recursive backtracking
 - [Wireframe 51](Wireframe-51/exerion-source-code/exerion.html) Recreate Exerion's pseudo-3D landscape
 - [Wireframe 52](Wireframe-52/source-code-gradius/gradius.html) Recreate Gradius's rock-spewing volcanoes
+- [Wireframe 53 SideScrollingShootEmUp](Wireframe-53/SideScrollingShootEmUp/) Create your own side-scrolling shoot-'em-up
 - [Wireframe 53](Wireframe-53/source-code-pinball/pinball.html) Code your own pinball video game
