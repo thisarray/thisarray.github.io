@@ -115,3 +115,4 @@ Chapter 10 - Four Extra Games
 - [Wireframe 52](Wireframe-52/source-code-gradius/gradius.html) Recreate Gradius's rock-spewing volcanoes
 - [Wireframe 53 SideScrollingShootEmUp](Wireframe-53/SideScrollingShootEmUp/) Create your own side-scrolling shoot-'em-up
 - [Wireframe 53](Wireframe-53/source-code-pinball/pinball.html) Code your own pinball video game
+- [Wireframe 54](Wireframe-54/source-code-crazy-golf/crazygolf.html) Code a Spectrum-style crazy golf game
