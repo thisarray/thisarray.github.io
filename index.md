@@ -43,6 +43,20 @@ Chapter 10 - Four Extra Games
 - [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player.
 - [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row.
 
+## Full games from [Simple Game Tutorials](https://github.com/thisarray/simplegametutorials.github.io):
+
+- [asteroids](simplegametutorials.github.io/asteroids/asteroids.html)
+- [bird](simplegametutorials.github.io/bird/bird.html)
+- [blackjack](simplegametutorials.github.io/blackjack/blackjack.html)
+- [blocks](simplegametutorials.github.io/blocks/blocks.html)
+- [eyes](simplegametutorials.github.io/eyes/eyes.html)
+- [fifteen](simplegametutorials.github.io/fifteen/fifteen.html)
+- [flowers](simplegametutorials.github.io/flowers/flowers.html)
+- [life](simplegametutorials.github.io/life/life.html)
+- [repeat](simplegametutorials.github.io/repeat/repeat.html)
+- [snake](simplegametutorials.github.io/snake/snake.html)
+- [sokoban](simplegametutorials.github.io/sokoban/sokoban.html)
+
 ## Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](https://github.com/thisarray/inventwithpython3rded):
 
 - [Hello world! from chapter 17](inventwithpython3rded/pygameHelloWorld.html)
@@ -115,4 +129,5 @@ Chapter 10 - Four Extra Games
 - [Wireframe 52](Wireframe-52/source-code-gradius/gradius.html) Recreate Gradius's rock-spewing volcanoes
 - [Wireframe 53 SideScrollingShootEmUp](Wireframe-53/SideScrollingShootEmUp/) Create your own side-scrolling shoot-'em-up
 - [Wireframe 53](Wireframe-53/source-code-pinball/pinball.html) Code your own pinball video game
+- [JavaScript CHIP-8 emulator](Wireframe-54/emulator-guide/pychip8/)
 - [Wireframe 54](Wireframe-54/source-code-crazy-golf/crazygolf.html) Code a Spectrum-style crazy golf game
