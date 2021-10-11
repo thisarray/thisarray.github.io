@@ -131,3 +131,4 @@ Chapter 10 - Four Extra Games
 - [Wireframe 53](Wireframe-53/source-code-pinball/pinball.html) Code your own pinball video game
 - [JavaScript CHIP-8 emulator](Wireframe-54/emulator-guide/pychip8/)
 - [Wireframe 54](Wireframe-54/source-code-crazy-golf/crazygolf.html) Code a Spectrum-style crazy golf game
+- [Wireframe 55](Wireframe-55/source-code-tranz-am/transam.html) Make a Tranz Am driving game
