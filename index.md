@@ -132,3 +132,17 @@ Chapter 10 - Four Extra Games
 - [JavaScript CHIP-8 emulator](Wireframe-54/emulator-guide/pychip8/)
 - [Wireframe 54](Wireframe-54/source-code-crazy-golf/crazygolf.html) Code a Spectrum-style crazy golf game
 - [Wireframe 55](Wireframe-55/source-code-tranz-am/transam.html) Make a Tranz Am driving game
+- [Wireframe 56 Boulder Dash level editor](Wireframe56/boulderdash-construction-kit/boulderedit.html) Make a Boulder Dash level editor in Python
+- [Wireframe 56](Wireframe56/bubble-bobble-source-code/bubblebobble.html) Code an homage to Bubble Bobble
+- [Wireframe 57](Wireframe-57/lords-midnight-source-code/lords.html) Code your own landscape engine
+
+## My own creations
+
+- [Sokoban3D](Sokoban3D/) Sokoban implementation in first-person perspective.
+- [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code.
+- [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
+the abstract art program is likely trying to create.
+- [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni.
+- [piano](Billy_Joel/piano.html) One note piano keyboard.
+- [007](007/) My attempt at the James Bond opening sequence.
+- [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence.
