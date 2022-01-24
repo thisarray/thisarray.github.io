@@ -134,7 +134,9 @@ Chapter 10 - Four Extra Games
 - [Wireframe 55](Wireframe-55/source-code-tranz-am/transam.html) Make a Tranz Am driving game
 - [Wireframe 56 Boulder Dash level editor](Wireframe56/boulderdash-construction-kit/boulderedit.html) Make a Boulder Dash level editor in Python
 - [Wireframe 56](Wireframe56/bubble-bobble-source-code/bubblebobble.html) Code an homage to Bubble Bobble
+- [Wireframe 57 retro platformer](Wireframe-57/platform-game-project/) Make your own retro platformer
 - [Wireframe 57](Wireframe-57/lords-midnight-source-code/lords.html) Code your own landscape engine
+- [Wireframe 58](Wireframe-58/source-code-skateboarding/skateordie.html) Code an homage to the classic Skate Or Die!
 
 ## My own creations
 
@@ -143,6 +145,7 @@ Chapter 10 - Four Extra Games
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
 the abstract art program is likely trying to create.
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni.
+- [firework](Katy_Perry_baby/)
 - [piano](Billy_Joel/piano.html) One note piano keyboard.
 - [007](007/) My attempt at the James Bond opening sequence.
 - [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence.
