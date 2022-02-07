@@ -137,6 +137,7 @@ Chapter 10 - Four Extra Games
 - [Wireframe 57 retro platformer](Wireframe-57/platform-game-project/) Make your own retro platformer
 - [Wireframe 57](Wireframe-57/lords-midnight-source-code/lords.html) Code your own landscape engine
 - [Wireframe 58](Wireframe-58/source-code-skateboarding/skateordie.html) Code an homage to the classic Skate Or Die!
+- [Wireframe 59](Wireframe-59/bombjack-source-code/bombjack.html) Code an explosive homage to Bomb Jack
 
 ## My own creations
 
