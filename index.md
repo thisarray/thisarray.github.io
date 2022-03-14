@@ -147,6 +147,12 @@ Chapter 10 - Four Extra Games
 the abstract art program is likely trying to create.
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni.
 - [firework](Katy_Perry_baby/)
+- [Kamen Vector saves lives!](kamen_vector/)
 - [piano](Billy_Joel/piano.html) One note piano keyboard.
 - [007](007/) My attempt at the James Bond opening sequence.
+- [crypto Superb Owl commercial](crypto_superb_owl_commercial/)
 - [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence.
+
+## And now for something completely different
+
+- [Check and spell](check_and_spell/) Spell a numeric amount in words.
