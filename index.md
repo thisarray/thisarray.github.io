@@ -138,6 +138,11 @@ Chapter 10 - Four Extra Games
 - [Wireframe 57](Wireframe-57/lords-midnight-source-code/lords.html) Code your own landscape engine
 - [Wireframe 58](Wireframe-58/source-code-skateboarding/skateordie.html) Code an homage to the classic Skate Or Die!
 - [Wireframe 59](Wireframe-59/bombjack-source-code/bombjack.html) Code an explosive homage to Bomb Jack
+- [Wireframe 60](Wireframe-60/fantasy-city.html) Create a fantasy city using nothing more than some dice and a few handy tables
+- [Wireframe 60](Wireframe-60/source-code-braid/braid.html) Travel back in time with Braid
+- [Wireframe 61](Wireframe-61/zelda-like/zelda.html) Code your own top-down Zelda-like
+- [Wireframe 61](Wireframe-61/zelda-like/zelda_random.html) A version of Zelda-like with a procedurally generated world so the adventure never ends
+- [Wireframe 62](Wireframe-62/guitar-hero-source-code/guitarhero.html) Make a Guitar Hero-style rhythm action game
 
 ## My own creations
 
@@ -146,6 +151,8 @@ Chapter 10 - Four Extra Games
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
 the abstract art program is likely trying to create.
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni.
+- [ball in a maze](ball_in_a_maze/) A version of labyrinth you can play by tilting your phone.
+- [chorded keyboard](chorded_keyboard/) A chorded keyboard.
 - [firework](Katy_Perry_baby/)
 - [Kamen Vector saves lives!](kamen_vector/)
 - [piano](Billy_Joel/piano.html) One note piano keyboard.
