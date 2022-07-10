@@ -114,6 +114,7 @@ Chapter 10 - Four Extra Games
 - [Wireframe 39](Wireframe-39/source-code-gauntlet/gauntlet.html) Code Gauntlet's four-player co-op mode
 - [Wireframe 40](Wireframe-40/jetpac.html) Code Jetpac's rocket-building action
 - [Wireframe 41](Wireframe-41/timepilot.html) Recreate Time Pilot's free-scrolling action
+- [Phone Pilot](Wireframe-41/phone_pilot.html) A version of the port controlled by tilting your phone
 - [Wireframe 42](Wireframe-42/source-code-qbert/qbert.html) Recreate Qbert's cube-hopping action
 - [Wireframe 43](Wireframe-43/source-code-rally-x/rallyx.html) Code a Rally-X-style mini-map
 - [Wireframe 44](Wireframe-44/source-code-artillery/artillery.html) Code your own Artillery-style tank game
@@ -143,6 +144,15 @@ Chapter 10 - Four Extra Games
 - [Wireframe 61](Wireframe-61/zelda-like/zelda.html) Code your own top-down Zelda-like
 - [Wireframe 61](Wireframe-61/zelda-like/zelda_random.html) A version of Zelda-like with a procedurally generated world so the adventure never ends
 - [Wireframe 62](Wireframe-62/guitar-hero-source-code/guitarhero.html) Make a Guitar Hero-style rhythm action game
+- [Wireframe 63](Wireframe-63/source-code-game-and-watch/fire.html) Code an homage to a Game & Watch classic
+- [Wireframe 64](Wireframe-64/source-code-startdust/stardust.html) Code an homage to Super Stardust
+
+## Recreations of Mozilla Developer Network (MDN) examples using [jsgame0.js](https://github.com/thisarray/jsgame0)
+
+- [Non-scrolling tilemaps](mdn_tilemaps_examples/no-scroll.html)
+- [Tilemaps with layers](mdn_tilemaps_examples/layers.html)
+- [Scrolling tilemaps](mdn_tilemaps_examples/scroll.html)
+- [Collisions in tilemaps](mdn_tilemaps_examples/logic-grid.html)
 
 ## My own creations
 
@@ -150,11 +160,15 @@ Chapter 10 - Four Extra Games
 - [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code.
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
 the abstract art program is likely trying to create.
+- [Sound bugle calls](bugle_call/)
+- [Play the rhythm action game Bugle Hero](bugle_call/hero.html)
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni.
 - [ball in a maze](ball_in_a_maze/) A version of labyrinth you can play by tilting your phone.
 - [chorded keyboard](chorded_keyboard/) A chorded keyboard.
+- [An analog clock](horology/analog.html)
 - [firework](Katy_Perry_baby/)
 - [Kamen Vector saves lives!](kamen_vector/)
+- [Solar System](horology/orbit.html)
 - [piano](Billy_Joel/piano.html) One note piano keyboard.
 - [007](007/) My attempt at the James Bond opening sequence.
 - [crypto Superb Owl commercial](crypto_superb_owl_commercial/)
@@ -162,4 +176,5 @@ the abstract art program is likely trying to create.
 
 ## And now for something completely different
 
+- [Random number generator](random_number_generator/)
 - [Check and spell](check_and_spell/) Spell a numeric amount in words.
