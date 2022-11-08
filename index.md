@@ -43,6 +43,23 @@ Chapter 10 - Four Extra Games
 - [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player.
 - [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row.
 
+## Full games from Retro Gaming with Raspberry Pi:
+
+- [Racing](retro-gaming/Part%2001%20-%20Racing/race1.html)
+- [Simple Brian](retro-gaming/Part%2002%20-%20Simple%20Brian/brian.html)
+- [Scrambled Cat](retro-gaming/Part%2003%20-%20Scrambled%20Cat/scrambledcat.html)
+- [Pivaders 1](retro-gaming/Part%2004%20-%20Pivaders%201/pivaders1.html)
+- [Pivaders 2](retro-gaming/Part%2005%20-%20Pivaders%202/pivaders2.html)
+- [Hungry Pi-Man 1](retro-gaming/Part%2006%20-%20Hungry%20Pi-Man%201/piman1.html)
+- [Hungry Pi-Man 2](retro-gaming/Part%2007%20-%20Hungry%20Pi-Man%202/piman2.html)
+- [AmazeBalls 1](retro-gaming/Part%2008%20-%20AmazeBalls%201/amazeballs1.html)
+- [AmazeBalls 2](retro-gaming/Part%2009%20-%20AmazeBalls%202/amazeballs2.html)
+- [AmazeBalls 3](retro-gaming/Part%2010%20-%20AmazeBalls%203/amazeballs3.html)
+
+[Read the Second Edition](https://magpi.raspberrypi.com/books/retro-gaming-raspberry-pi-2nd-edition)
+
+[Read the First Edition](https://magpi.raspberrypi.com/books/retro-gaming)
+
 ## Full games from [Simple Game Tutorials](https://github.com/thisarray/simplegametutorials.github.io):
 
 - [asteroids](simplegametutorials.github.io/asteroids/asteroids.html)
@@ -154,6 +171,8 @@ Chapter 10 - Four Extra Games
 - [Wireframe 65](Wireframe-65/source-code-metal-storm/metalstorm.html) Code a gravity-defying platformer mechanic
 - [Wireframe 66](Wireframe-66/source-code-excitebike/exitebike.html) Code an homage to Excitebike
 - [Wireframe 66 procedurally generated](Wireframe-66/source-code-excitebike/exitebike_random.html) A version with a procedurally generated track
+- [Wireframe 67](Wireframe-67/source-code-elite/elite.html) Recreate Elite's iconic opening title screen
+- [Wireframe 68](Wireframe-68/source-code-sprite-designer/pixeledit.html) Make your own pixel editing program
 
 ## Recreations of Mozilla Developer Network (MDN) examples using [jsgame0.js](https://github.com/thisarray/jsgame0)
 
