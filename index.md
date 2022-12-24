@@ -8,6 +8,26 @@
 - [Myriapod](Code-the-Classics/myriapod-master/myriapod.html) Centipede clone
 - [Substitute Soccer](Code-the-Classics/soccer-master/soccer.html)
 
+[Read the Book](https://wireframe.raspberrypi.com/books/code-the-classics1)
+
+## Full games from [Essentials - Make Games with Python](https://github.com/thisarray/Games-with-Pygame):
+
+- [Play hello in your browser.](Games-with-Pygame/Part%201/hello.html)
+- [Play paths in your browser.](Games-with-Pygame/Part%201/paths.html)
+- [Play Pygame Shapes! 1 in your browser.](Games-with-Pygame/Part%202/moving.html)
+- [Play Pygame Shapes! 2 in your browser.](Games-with-Pygame/Part%202/properties.html)
+- [Play Pygame Keyboard! in your browser.](Games-with-Pygame/Part%203/keyboard.html)
+- [Play Pygame Mouse! in your browser.](Games-with-Pygame/Part%203/mouse.html)
+- [Play Drop! in your browser.](Games-with-Pygame/Part%204/Code/drop.html)
+- [Play Soundboard in your browser.](Games-with-Pygame/Part%205/Code/sounds.html)
+- [Play Solar System Simulator in your browser.](Games-with-Pygame/Part%206/Code/simulator.html)
+- [Play collisions in your browser.](Games-with-Pygame/Part%207/collisions.html)
+- [Play Fred's Bad Day in your browser.](Games-with-Pygame/Part%208/freds_bad_day.html)
+- [Play Alien's Are Gonna Kill Me! 1 in your browser.](Games-with-Pygame/Part%209/aliens.html)
+- [Play Alien's Are Gonna Kill Me! 2 in your browser.](Games-with-Pygame/Part%2010/aliens.html)
+
+[Read the Book](https://magpi.raspberrypi.com/books/essentials-games-vol1)
+
 ## Full games from [Making Games with Python &amp; Pygame](https://github.com/thisarray/making-games-with-python-and-pygame):
 
 Chapter 1 - Installing Python and Pygame
@@ -42,6 +62,8 @@ Chapter 10 - Four Extra Games
 - [inkspill](making-games-with-python-and-pygame/inkspill/inkspill.html) - A "Flood It" clone that makes use of the flood fill algorithm.
 - [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player.
 - [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row.
+
+[Read the Book](https://inventwithpython.com/pygame/)
 
 ## Full games from Retro Gaming with Raspberry Pi:
 
@@ -84,6 +106,10 @@ Chapter 10 - Four Extra Games
 - [Dodger from chapter 20](inventwithpython3rded/dodger.html)
 
 [Read the 4th Edition online](https://inventwithpython.com/invent4thed/).
+
+## Code examples from [The MagPi magazine](https://magpi.cc):
+
+- [MagPi 52](magpi-issue52/tracker.html) Find out where Santa is on his journey around the world by visualizing it on a map
 
 ## Code examples from [Wireframe magazine](https://wfmag.cc):
 
@@ -173,6 +199,8 @@ Chapter 10 - Four Extra Games
 - [Wireframe 66 procedurally generated](Wireframe-66/source-code-excitebike/exitebike_random.html) A version with a procedurally generated track
 - [Wireframe 67](Wireframe-67/source-code-elite/elite.html) Recreate Elite's iconic opening title screen
 - [Wireframe 68](Wireframe-68/source-code-sprite-designer/pixeledit.html) Make your own pixel editing program
+- [Wireframe 69](Wireframe-69/source-code-monkey-island/monkeyisland.html) Make a Monkey Island-style adventure
+- [Wireframe 69 realistic](Wireframe-69/source-code-monkey-island/realistic.html) A version with more realistic video game dialog
 
 ## Recreations of Mozilla Developer Network (MDN) examples using [jsgame0.js](https://github.com/thisarray/jsgame0)
 
