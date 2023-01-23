@@ -20,6 +20,8 @@
 - [Play Pygame Mouse! in your browser.](Games-with-Pygame/Part%203/mouse.html)
 - [Play Drop! in your browser.](Games-with-Pygame/Part%204/Code/drop.html)
 - [Play Soundboard in your browser.](Games-with-Pygame/Part%205/Code/sounds.html)
+- [Play See and Sound in your browser.](Games-with-Pygame/Part%205/Code/see_and_sound.html) An homage to a See n Say
+- [Play Tilt and Sound in your browser.](Games-with-Pygame/Part%205/Code/tilt_and_sound.html) A version controlled by tilting your phone
 - [Play Solar System Simulator in your browser.](Games-with-Pygame/Part%206/Code/simulator.html)
 - [Play collisions in your browser.](Games-with-Pygame/Part%207/collisions.html)
 - [Play Fred's Bad Day in your browser.](Games-with-Pygame/Part%208/freds_bad_day.html)
@@ -109,6 +111,9 @@ Chapter 10 - Four Extra Games
 
 ## Code examples from [The MagPi magazine](https://magpi.cc):
 
+- [MagPi 2](magpi-issue2/house.html) The House
+- [Home Alone](magpi-issue2/home_alone.html) An homage to Home Alone based on the House
+- [MagPi 4](magpi-issue4/jasefish.html) Fish Game
 - [MagPi 52](magpi-issue52/tracker.html) Find out where Santa is on his journey around the world by visualizing it on a map
 
 ## Code examples from [Wireframe magazine](https://wfmag.cc):
@@ -211,25 +216,25 @@ Chapter 10 - Four Extra Games
 
 ## My own creations
 
-- [Sokoban3D](Sokoban3D/) Sokoban implementation in first-person perspective.
-- [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code.
+- [Sokoban3D](Sokoban3D/) Sokoban implementation in first-person perspective
+- [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
 the abstract art program is likely trying to create.
 - [Sound bugle calls](bugle_call/)
 - [Play the rhythm action game Bugle Hero](bugle_call/hero.html)
-- [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni.
-- [ball in a maze](ball_in_a_maze/) A version of labyrinth you can play by tilting your phone.
-- [chorded keyboard](chorded_keyboard/) A chorded keyboard.
+- [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni
+- [ball in a maze](ball_in_a_maze/) A version of labyrinth you can play by tilting your phone
+- [chorded keyboard](chorded_keyboard/) A chorded keyboard
 - [An analog clock](horology/analog.html)
 - [firework](Katy_Perry_baby/)
 - [Kamen Vector saves lives!](kamen_vector/)
 - [Solar System](horology/orbit.html)
-- [piano](Billy_Joel/piano.html) One note piano keyboard.
-- [007](007/) My attempt at the James Bond opening sequence.
+- [piano](Billy_Joel/piano.html) One note piano keyboard
+- [007](007/) My attempt at the James Bond opening sequence
 - [crypto Superb Owl commercial](crypto_superb_owl_commercial/)
-- [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence.
+- [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence
 
 ## And now for something completely different
 
 - [Random number generator](random_number_generator/)
-- [Check and spell](check_and_spell/) Spell a numeric amount in words.
+- [Check and spell](check_and_spell/) Spell a numeric amount in words
