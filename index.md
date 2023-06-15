@@ -8,6 +8,11 @@
 - [Myriapod](Code-the-Classics/myriapod-master/myriapod.html) Centipede clone
 - [Substitute Soccer](Code-the-Classics/soccer-master/soccer.html)
 
+### Reskins of Substitute Soccer
+
+- [Field Hockey](Code-the-Classics/soccer-master/field_hockey.html)
+- [Ice Hockey](Code-the-Classics/soccer-master/ice_hockey.html)
+
 [Read the Book](https://wireframe.raspberrypi.com/books/code-the-classics1)
 
 ## Full games from [Essentials - Make Games with Python](https://github.com/thisarray/Games-with-Pygame):
@@ -50,20 +55,20 @@ Chapter 2 - Pygame Basics
 
 Chapter 7 - Tetromino
 - [tetromino](making-games-with-python-and-pygame/tetromino/tetromino.html)
-- [pentomino](making-games-with-python-and-pygame/tetromino/pentomino.html) - A version of Tetromino using pieces made from 5 boxes.
-- [tetrominoforidiots](making-games-with-python-and-pygame/tetromino/tetrominoforidiots.html) - A version of Tetromino using pieces made from 1 box.
-- [tromino](making-games-with-python-and-pygame/tetromino/tromino.html) - A version of Tetromino using pieces made from 3 boxes.
-- [domino](making-games-with-python-and-pygame/tetromino/domino.html) - A version of Tetromino using pieces made from 2 boxes.
+- [pentomino](making-games-with-python-and-pygame/tetromino/pentomino.html) - A version of Tetromino using pieces made from 5 boxes
+- [tetrominoforidiots](making-games-with-python-and-pygame/tetromino/tetrominoforidiots.html) - A version of Tetromino using pieces made from 1 box
+- [tromino](making-games-with-python-and-pygame/tetromino/tromino.html) - A version of Tetromino using pieces made from 3 boxes
+- [domino](making-games-with-python-and-pygame/tetromino/domino.html) - A version of Tetromino using pieces made from 2 boxes
 
 [Chapter 8 - Squirrel Eat Squirrel](making-games-with-python-and-pygame/squirrel/squirrel.html)
 
 [Chapter 9 - Star Pusher](making-games-with-python-and-pygame/starpusher/starpusher.html)
 
 Chapter 10 - Four Extra Games
-- [flippy](making-games-with-python-and-pygame/flippy/flippy.html) - An "Othello" clone where the player tries to flip the computer AI player's tiles.
-- [inkspill](making-games-with-python-and-pygame/inkspill/inkspill.html) - A "Flood It" clone that makes use of the flood fill algorithm.
-- [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player.
-- [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row.
+- [flippy](making-games-with-python-and-pygame/flippy/flippy.html) - An "Othello" clone where the player tries to flip the computer AI player's tiles
+- [inkspill](making-games-with-python-and-pygame/inkspill/inkspill.html) - A "Flood It" clone that makes use of the flood fill algorithm
+- [fourinarow](making-games-with-python-and-pygame/fourinarow/fourinarow.html) - A "Connect Four" clone against the computer AI player
+- [gemgem](making-games-with-python-and-pygame/gemgem/gemgem.html) - A "Bejeweled" clone where the player swaps gems to try to get three identical gems in a row
 
 [Read the Book](https://inventwithpython.com/pygame/)
 
@@ -98,6 +103,13 @@ Chapter 10 - Four Extra Games
 - [snake](simplegametutorials.github.io/snake/snake.html)
 - [sokoban](simplegametutorials.github.io/sokoban/sokoban.html)
 
+## A digital version of [Dirty Matters: The Soil Game](https://soilgame.wixsite.com/free2print)
+
+- [Full game](Soil_Game/)
+- [A version of the game with just soil mechanics](Soil_Game/soil.html)
+- [A version of the game with only event cards](Soil_Game/event.html)
+- [A version of the game with event and soil power cards](Soil_Game/power.html)
+
 ## Code examples from [Invent Your Own Computer Games with Python, 3rd Edition](https://github.com/thisarray/inventwithpython3rded):
 
 - [Hello world! from chapter 17](inventwithpython3rded/pygameHelloWorld.html)
@@ -115,6 +127,7 @@ Chapter 10 - Four Extra Games
 - [Home Alone](magpi-issue2/home_alone.html) An homage to Home Alone based on the House
 - [MagPi 4](magpi-issue4/jasefish.html) Fish Game
 - [MagPi 52](magpi-issue52/tracker.html) Find out where Santa is on his journey around the world by visualizing it on a map
+- [Babbage versus Bugs](Annual-2018/bugs/bugs.html) A space shooter game
 
 ## Code examples from [Wireframe magazine](https://wfmag.cc):
 
@@ -158,6 +171,7 @@ Chapter 10 - Four Extra Games
 - [Wireframe 32](Wireframe-32/source-code/kungfu.html) Code a Kung-Fu Master-style beat-'em-up
 - [Wireframe 33](Wireframe-33/source-code/zaxxon.html) Code a Zaxxon-style axonometric level
 - [Wireframe 34](Wireframe-34/source-code-marble-madness/marble.html) Code a Marble Madness homage
+- [Wireframe 34 Tilt](Wireframe-34/source-code-marble-madness/tilt.html) A version of the port controlled by tilting your phone
 - [Wireframe 35](Wireframe-35/source-code-skeet-shooting/skeetshoot.html) Code Hyper Sports's shooting minigame
 - [Wireframe 36](Wireframe-36/source-code-pool/pool_game.html) Make a Side Pocket-esque pool game
 - [Wireframe 37](Wireframe-37/source-code-lunar-lander/lunarlander.html) Code a homage to Lunar Lander
@@ -207,6 +221,11 @@ Chapter 10 - Four Extra Games
 - [Wireframe 69](Wireframe-69/source-code-monkey-island/monkeyisland.html) Make a Monkey Island-style adventure
 - [Wireframe 69 realistic](Wireframe-69/source-code-monkey-island/realistic.html) A version with more realistic video game dialog
 
+## Recreation of Mozilla Developer Network (MDN) platformer game using [jsgame0.js](https://github.com/thisarray/jsgame0)
+
+- [Full game](mdn_platformer_game/)
+- [Workshop](mdn_platformer_game/workshop/)
+
 ## Recreations of Mozilla Developer Network (MDN) examples using [jsgame0.js](https://github.com/thisarray/jsgame0)
 
 - [Non-scrolling tilemaps](mdn_tilemaps_examples/no-scroll.html)
@@ -219,7 +238,7 @@ Chapter 10 - Four Extra Games
 - [Sokoban3D](Sokoban3D/) Sokoban implementation in first-person perspective
 - [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
-the abstract art program is likely trying to create.
+the abstract art program is likely trying to create
 - [Sound bugle calls](bugle_call/)
 - [Play the rhythm action game Bugle Hero](bugle_call/hero.html)
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni
@@ -229,12 +248,15 @@ the abstract art program is likely trying to create.
 - [firework](Katy_Perry_baby/)
 - [Kamen Vector saves lives!](kamen_vector/)
 - [Solar System](horology/orbit.html)
+- [scratcher](scratcher/) A scratcher to scratch the itch
 - [piano](Billy_Joel/piano.html) One note piano keyboard
 - [007](007/) My attempt at the James Bond opening sequence
 - [crypto Superb Owl commercial](crypto_superb_owl_commercial/)
 - [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence
+- [Hallway gag](Salmon/hallway.html) Classic hallway gag
 
 ## And now for something completely different
 
 - [Random number generator](random_number_generator/)
+- [Word Game](word_game/) A 4 letter word guessing game
 - [Check and spell](check_and_spell/) Spell a numeric amount in words
