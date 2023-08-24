@@ -123,11 +123,16 @@ Chapter 10 - Four Extra Games
 
 ## Code examples from [The MagPi magazine](https://magpi.cc):
 
-- [MagPi 2](magpi-issue2/house.html) The House
+- [MagPi 2](magpi-issue2/) The House
 - [Home Alone](magpi-issue2/home_alone.html) An homage to Home Alone based on the House
-- [MagPi 4](magpi-issue4/jasefish.html) Fish Game
-- [MagPi 52](magpi-issue52/tracker.html) Find out where Santa is on his journey around the world by visualizing it on a map
-- [Babbage versus Bugs](Annual-2018/bugs/bugs.html) A space shooter game
+- [MagPi 4](magpi-issue4/) Fish Game
+- [MagPi 21](magpi-issue21/) Stronghold of the Dwarven Lords
+- [MagPi 52](magpi-issue52/) Find out where Santa is on his journey around the world by visualizing it on a map
+- [MagPi 65](magpi-issue65/) Bells - Ring the changes
+- [MagPi 65](magpi-issue65/bells.html) Bell ringing only
+- [MagPi 75](magpi-issue75/) Bob simple platform game
+- [MagPi 75](magpi-issue75/bat-and-ball.html) Bat and ball game
+- [Babbage versus Bugs](Annual-2018/bugs/bugs.html) An exciting Space Invaders clone
 
 ## Code examples from [Wireframe magazine](https://wfmag.cc):
 
@@ -181,6 +186,9 @@ Chapter 10 - Four Extra Games
 - [Wireframe 40](Wireframe-40/jetpac.html) Code Jetpac's rocket-building action
 - [Wireframe 41](Wireframe-41/timepilot.html) Recreate Time Pilot's free-scrolling action
 - [Phone Pilot](Wireframe-41/phone_pilot.html) A version of the port controlled by tilting your phone
+- [The Simpsons](Wireframe-41/simpsons.html) The Simpsons style title animation
+- [Banner towing](Wireframe-41/banner.html) A banner towing animation
+- [Skywriting](Wireframe-41/skywriting.html) Skywriting with a plane
 - [Wireframe 42](Wireframe-42/source-code-qbert/qbert.html) Recreate Qbert's cube-hopping action
 - [Wireframe 43](Wireframe-43/source-code-rally-x/rallyx.html) Code a Rally-X-style mini-map
 - [Wireframe 44](Wireframe-44/source-code-artillery/artillery.html) Code your own Artillery-style tank game
@@ -239,6 +247,8 @@ Chapter 10 - Four Extra Games
 - [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
 the abstract art program is likely trying to create
+- [Landscape](Abstract_Art/landscape.html) A 4 color landscape
+- [Mountains](Abstract_Art/mountains.html) A mountain range
 - [Sound bugle calls](bugle_call/)
 - [Play the rhythm action game Bugle Hero](bugle_call/hero.html)
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni
@@ -253,10 +263,12 @@ the abstract art program is likely trying to create
 - [007](007/) My attempt at the James Bond opening sequence
 - [crypto Superb Owl commercial](crypto_superb_owl_commercial/)
 - [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence
-- [Hallway gag](Salmon/hallway.html) Classic hallway gag
+- [Hallway gag](Salmon/hallway.html)
+- [Indiana Jones travel animation](The_World/indiana_jones.html)
 
 ## And now for something completely different
 
 - [Random number generator](random_number_generator/)
+- [Random number generator (ball version)](random_number_generator/ball.html)
 - [Word Game](word_game/) A 4 letter word guessing game
 - [Check and spell](check_and_spell/) Spell a numeric amount in words
