@@ -232,7 +232,7 @@ Chapter 10 - Four Extra Games
 ## Recreation of Mozilla Developer Network (MDN) platformer game using [jsgame0.js](https://github.com/thisarray/jsgame0)
 
 - [Full game](mdn_platformer_game/)
-- [Workshop](mdn_platformer_game/workshop/)
+- [Workshop](mdn_platformer_game/workshop/) Adaptation of the workshop for [jsgame0.js](https://github.com/thisarray/jsgame0)
 
 ## Recreations of Mozilla Developer Network (MDN) examples using [jsgame0.js](https://github.com/thisarray/jsgame0)
 
@@ -247,28 +247,41 @@ Chapter 10 - Four Extra Games
 - [Abstract Art](Abstract_Art/) That abstract art program everyone makes when they first learn to draw using code
 - [Mondrian](Abstract_Art/mondrian.html) Abstract art in the style of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian)
 the abstract art program is likely trying to create
-- [Landscape](Abstract_Art/landscape.html) A 4 color landscape
+- [Landscape](Abstract_Art/landscape.html) A simple 4 color landscape
 - [Mountains](Abstract_Art/mountains.html) A mountain range
+- [Parallax](Abstract_Art/parallax.html) Parallax waves
+- [Waves](Abstract_Art/waves.html) Swaying waves
+- [Sinusoidal waves](Abstract_Art/waves_sinusoidal.html) Rolling waves
+- [ball in a maze](ball_in_a_maze/) A version of labyrinth you can play by tilting your phone
 - [Sound bugle calls](bugle_call/)
 - [Play the rhythm action game Bugle Hero](bugle_call/hero.html)
 - [Bunny World](Bunny_World/) A bit of nostalgia for CS108 alumni
-- [ball in a maze](ball_in_a_maze/) A version of labyrinth you can play by tilting your phone
 - [chorded keyboard](chorded_keyboard/) A chorded keyboard
-- [An analog clock](horology/analog.html)
 - [firework](Katy_Perry_baby/)
+- [Hangman](Salmon/hangman.html) A phrase guessing game
 - [Kamen Vector saves lives!](kamen_vector/)
-- [Solar System](horology/orbit.html)
-- [scratcher](scratcher/) A scratcher to scratch the itch
 - [piano](Billy_Joel/piano.html) One note piano keyboard
+- [scratcher](scratcher/) A scratcher to scratch the itch
+
 - [007](007/) My attempt at the James Bond opening sequence
+- [An analog clock](horology/analog.html)
 - [crypto Superb Owl commercial](crypto_superb_owl_commercial/)
 - [Dragon Ball Z](Dragon_Ball_Z/) My attempt at the Dragon Ball Z fight sequence
 - [Hallway gag](Salmon/hallway.html)
 - [Indiana Jones travel animation](The_World/indiana_jones.html)
+- [Solar System](horology/orbit.html)
+- [Venture Bros.](Salmon/venture.html) My attempt at the Venture Bros. title sequence
 
 ## And now for something completely different
 
 - [Random number generator](random_number_generator/)
 - [Random number generator (ball version)](random_number_generator/ball.html)
+- [Universal Product Code (UPC) Barcode generator](barcode/)
+- [Battleship](battleship/)
+- [Conway's Game of Life](Conway_Life/)
+- [Langton's Ant](Langton_Ant/)
+- [Minesweeper](minesweeper/)
+- [Reversi](Iago/)
+- [Solutions to the n queens problem](nqueens/)
 - [Word Game](word_game/) A 4 letter word guessing game
 - [Check and spell](check_and_spell/) Spell a numeric amount in words
