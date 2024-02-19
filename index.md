@@ -89,6 +89,16 @@ Chapter 10 - Four Extra Games
 
 [Read the First Edition](https://magpi.raspberrypi.com/books/retro-gaming)
 
+## Games from Beginning Game Programming with Pygame Zero:
+
+- [Battleship game](battleshipgame/)
+- [Compass game](compassgame/)
+- [Memory game](memorygame/)
+- [Tank game](tankgame/)
+- [Easy tank game](tankgame/trajectory.html) An easy version of Tank game with shell trajectories
+
+The book is not available online.
+
 ## Full games from [Simple Game Tutorials](https://github.com/thisarray/simplegametutorials.github.io):
 
 - [asteroids](simplegametutorials.github.io/asteroids/asteroids.html)
