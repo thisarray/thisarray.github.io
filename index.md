@@ -89,7 +89,7 @@ Chapter 10 - Four Extra Games
 
 [Read the First Edition](https://magpi.raspberrypi.com/books/retro-gaming)
 
-## Games from Beginning Game Programming with Pygame Zero:
+## Full games from Beginning Game Programming with Pygame Zero:
 
 - [Battleship game](battleshipgame/)
 - [Compass game](compassgame/)
