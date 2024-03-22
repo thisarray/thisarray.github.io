@@ -139,9 +139,9 @@ The book is not available online.
 - [MagPi 21](magpi-issue21/) Stronghold of the Dwarven Lords
 - [MagPi 52](magpi-issue52/) Find out where Santa is on his journey around the world by visualizing it on a map
 - [MagPi 65](magpi-issue65/) Bells - Ring the changes
-- [MagPi 65](magpi-issue65/bells.html) Bell ringing only
+- [MagPi 65 Bell ringing only](magpi-issue65/bells.html)
 - [MagPi 75](magpi-issue75/) Bob simple platform game
-- [MagPi 75](magpi-issue75/bat-and-ball.html) Bat and ball game
+- [MagPi 75 Bat and ball game](magpi-issue75/bat-and-ball.html)
 - [Babbage versus Bugs](Annual-2018/bugs/bugs.html) An exciting Space Invaders clone
 
 ## Code examples from [Wireframe magazine](https://wfmag.cc):
