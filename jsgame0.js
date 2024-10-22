@@ -1780,7 +1780,13 @@ class Actor {
     return [this.posx, this.posy];
   }
   set pos(pos) {
-    let [x=0, y=0] = pos;
+    let x, y;
+    if (Array.isArray(pos)) {
+      [x=0, y=0] = pos;
+    }
+    else {
+      ({x=0, y=0} = pos);
+    }
     this.posx = x;
     this.posy = y;
   }
@@ -2472,14 +2478,14 @@ const screen = (function () {
   function keydown(event) {
     keyboard._press(event);
     if (hasKeyDown) {
-      window.on_key_down(keyboard._lookup(event), keyboard.bitmask, event.key)
+      window.on_key_down(keyboard._lookup(event), keyboard.bitmask, event.key);
     }
     event.preventDefault();
   }
 
   function keyup(event) {
     if (hasKeyUp) {
-      window.on_key_up(keyboard._lookup(event), keyboard.bitmask)
+      window.on_key_up(keyboard._lookup(event), keyboard.bitmask);
     }
     keyboard._release(event);
     event.preventDefault();
