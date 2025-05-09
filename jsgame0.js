@@ -715,10 +715,10 @@ const clock = (function () {
         throw new TypeError('callback must be a function.');
       }
       if (typeof delay !== 'number') {
-        throw new TypeError('delay must be a positive number.');
+        throw new TypeError('delay must be a positive number in seconds.');
       }
       if (delay <= 0) {
-        throw new RangeError('delay must be a positive number.');
+        throw new RangeError('delay must be a positive number in seconds.');
       }
       queue.push([callback, delay, 0]);
     },
@@ -739,10 +739,10 @@ const clock = (function () {
         throw new TypeError('callback must be a function.');
       }
       if (typeof interval !== 'number') {
-        throw new TypeError('interval must be a positive number.');
+        throw new TypeError('interval must be a positive number in seconds.');
       }
       if (interval <= 0) {
-        throw new RangeError('interval must be a positive number.');
+        throw new RangeError('interval must be a positive number in seconds.');
       }
       queue.push([callback, interval, interval]);
     },
@@ -754,7 +754,7 @@ const clock = (function () {
       if (typeof callback !== 'function') {
         throw new TypeError('callback must be a function.');
       }
-      queue = queue.filter(q => (q[0] !== callback));
+      queue = queue.filter((q) => (q[0] !== callback));
     },
 
     _clearQueue() {
@@ -832,7 +832,7 @@ const music = (function () {
 
   return {
     _load(loaderElement) {
-      for (let e of Array.from(loaderElement.querySelectorAll('audio'))) {
+      for (let e of loaderElement.querySelectorAll('audio')) {
         TRACK_MAP.set(e.dataset.name.trim(), e);
         e.addEventListener('ended', deejay);
       }
@@ -845,9 +845,10 @@ const music = (function () {
         return;
       }
       current = TRACK_MAP.get(name);
-      current.volume = volume;
-      current.loop = loop;
       current.currentTime = 0;
+      current.loop = loop;
+      current.muted = false;
+      current.volume = volume;
       current.play();
       paused = false;
       stopped = false;
@@ -897,6 +898,9 @@ const music = (function () {
     set_pos(pos) {
       if (typeof pos !== 'number') {
         throw new TypeError('pos must be a number between 0 and the duration of the track.');
+      }
+      if (pos < 0) {
+        throw new RangeError('pos must be a number between 0 and the duration of the track.');
       }
       if (current != null) {
         current.currentTime = Math.max(0, Math.min(pos, current.duration));
@@ -955,9 +959,19 @@ const music = (function () {
     },
 
     /*
-     * Does nothing. Only exists to match the interface.
+     * Fade out and eventually stop the current music playback over duration seconds.
      */
-    fadeout() {
+    fadeout(duration) {
+      if (typeof duration !== 'number') {
+        throw new TypeError('duration must be a positive number in seconds.');
+      }
+      if (duration <= 0) {
+        throw new RangeError('duration must be a positive number in seconds.');
+      }
+
+      if (current != null) {
+        animate(current, duration, {volume: 0}, 'linear', () => music.stop());
+      }
     },
 
     /*
@@ -991,7 +1005,7 @@ const tone = (function () {
   const NOTE_MAP = new Map();
 
   /*
-   * Convert the hard-coded number of samples in Pygame Zero to durations.
+   * Convert the hard-coded number of samples in Pygame Zero to durations in seconds.
    *
    * These constants refer to the stages of the
    * Attack Decay Sustain Release (ADSR) envelope
@@ -1063,10 +1077,10 @@ const tone = (function () {
         throw new TypeError('note must be a string. Notes are A-G, are either normal, flat (b) or sharp (#) and of octave 0-8.');
       }
       if (typeof duration !== 'number') {
-        throw new TypeError('duration must be a positive number.');
+        throw new TypeError('duration must be a positive number in seconds.');
       }
       if (duration <= 0) {
-        throw new RangeError('duration must be a positive number.');
+        throw new RangeError('duration must be a positive number in seconds.');
       }
 
       populateNotes();
@@ -1578,7 +1592,7 @@ Rect.prototype.toString = function () {
  *
  * In addition, the name of the image is stored in the "name" attribute and not
  * the "image" attribute.
- * "image" is too confusing when there are actual image Surfaces, too.
+ * "image" is too confusing when image Surface objects exist, too.
  */
 class Actor {
   constructor(name) {
@@ -2005,16 +2019,14 @@ class Actor {
    * Return the angle from this actor's position to target, in degrees.
    */
   angle_to(target) {
-    let vector = this._vector_to(target);
-    return vector[1];
+    return this._vector_to(target)[1];
   }
 
   /*
    * Return the distance from this actor's position to target, in pixels.
    */
   distance_to(target) {
-    let vector = this._vector_to(target);
-    return vector[0];
+    return this._vector_to(target)[0];
   }
 
   /*
@@ -2209,10 +2221,10 @@ class Inbetweener {
       throw new TypeError('puppet must be an object.');
     }
     if (typeof duration !== 'number') {
-      throw new TypeError('duration must be a positive number.');
+      throw new TypeError('duration must be a positive number in seconds.');
     }
     if (duration <= 0) {
-      throw new RangeError('duration must be a positive number.');
+      throw new RangeError('duration must be a positive number in seconds.');
     }
     if (typeof attributes !== 'object') {
       throw new TypeError('attributes must be an object.');
@@ -2248,10 +2260,10 @@ class Inbetweener {
         if (start.length !== end.length) {
           continue;
         }
-        if (start.some(e => (typeof e !== 'number'))) {
+        if (start.some((e) => (typeof e !== 'number'))) {
           continue;
         }
-        if (end.some(e => (typeof e !== 'number'))) {
+        if (end.some((e) => (typeof e !== 'number'))) {
           continue;
         }
         this.attributes.set(a, {start: start, end: end});
@@ -2320,7 +2332,7 @@ function animate() {
   if (animation instanceof Inbetweener) {
     if (!animation.done) {
       // Newly scheduled animations will overwrite old ones
-      Inbetweener.queue = Inbetweener.queue.filter(a => (a.puppet !== animation.puppet));
+      Inbetweener.queue = Inbetweener.queue.filter((a) => (a.puppet !== animation.puppet));
       Inbetweener.queue.push(animation);
     }
     return animation;
@@ -2363,7 +2375,7 @@ const screen = (function () {
   }
 
   /*
-   * Parse a color given as a String or an Array of Numbers.
+   * Return a parsed color given as a String or an Array of Numbers.
    */
   function parseColor(color) {
     if (typeof color === 'string') {
@@ -2418,13 +2430,6 @@ const screen = (function () {
       hasKeyUp = false,
       hasDraw = false,
       hasUpdate = false,
-      /*
-       * Set of string names of currently playing sounds.
-       *
-       * Tracked here so Object.getOwnPropertyNames(sounds)
-       * returns the names of all sounds.
-       */
-      playingSet = new Set(),
       running = 0,
       start;
 
@@ -2453,16 +2458,15 @@ const screen = (function () {
         clock._clearQueue();
         Inbetweener._clearQueue();
         for (const n of Object.getOwnPropertyNames(sounds)) {
-          sounds[n].loop = false;
-          sounds[n].currentTime = sounds[n].duration;
+          sounds[n].stop();
         }
-        playingSet.clear();
+        AudioWrapper.inFlight.clear();
         music.stop();
-        if (typeof window.reset === 'function') {
-          window.reset();
-        }
         if (pauseButton != null) {
           pauseButton.textContent = 'Pause';
+        }
+        if (typeof window.reset === 'function') {
+          window.reset();
         }
         screen.go();
       });
@@ -2515,14 +2519,6 @@ const screen = (function () {
     window.on_mouse_move([x, y], [event.movementX, event.movementY], event.buttons);
   }
 
-  function soundStart(event) {
-    playingSet.add(event.target.dataset.name.trim());
-  }
-
-  function soundEnd(event) {
-    playingSet.delete(event.target.dataset.name.trim());
-  }
-
   /*
    * The core game loop
    */
@@ -2556,6 +2552,162 @@ const screen = (function () {
     }
   }
 
+  /*
+   * Wrapper around an audio element to match the Pygame Zero interface.
+   */
+  class AudioWrapper {
+    /*
+     * Set of string names of currently playing sounds.
+     *
+     * Tracked here because Object.getOwnPropertyNames(sounds)
+     * returns the names of all sounds.
+     */
+    static inFlight = new Set();
+
+    static _soundStart(event) {
+      AudioWrapper.inFlight.add(event.target.dataset.name.trim());
+    }
+
+    static _soundEnd(event) {
+      let name = event.target.dataset.name.trim();
+      AudioWrapper.inFlight.delete(name);
+      if (sounds[name]._play_again()) {
+        sounds[name].play(0);
+      }
+    }
+
+
+    constructor(audioElement) {
+      if (!(audioElement instanceof HTMLMediaElement)) {
+        throw new TypeError('audioElement must be a HTMLMediaElement.');
+      }
+
+      this.audioElement = audioElement;
+      this.audioElement.currentTime = 0;
+      this.audioElement.loop = false;
+      this.audioElement.muted = false;
+
+      this.loopCount = 0;
+      this.volume = 1;
+      this.audioElement.volume = this.volume;
+
+      this.audioElement.addEventListener('play', AudioWrapper._soundStart);
+      this.audioElement.addEventListener('ended', AudioWrapper._soundEnd);
+    }
+
+    /*
+     * Play the sound, but loop it loopCount number of times and fade in over duration seconds.
+     */
+    play(loopCount = 1, duration = 0) {
+      if (typeof loopCount !== 'number') {
+        loopCount = 1;
+      }
+      if (typeof duration !== 'number') {
+        throw new TypeError('duration must be a positive number in seconds.');
+      }
+      if (duration < 0) {
+        throw new RangeError('duration must be a positive number in seconds.');
+      }
+
+      if (loopCount < 0) {
+        this.audioElement.loop = true;
+        // Set this.loopCount to 1 so it will be 0 after decrementing
+        this.loopCount = 1;
+      }
+      else {
+        this.audioElement.loop = false;
+        this.loopCount += loopCount;
+      }
+      this.loopCount--;
+      if (this.loopCount < 0) {
+        // Backstop this.loopCount at 0 for our sanity
+        this.loopCount = 0;
+        return;
+      }
+
+      if (duration > 0) {
+        // Fade in the audio element over duration seconds
+        this.audioElement.volume = 0;
+        animate(this.audioElement, duration, {volume: this.volume}, 'linear');
+      }
+      else {
+        this.audioElement.volume = this.volume;
+      }
+
+      this.audioElement.play();
+    }
+
+    /*
+     * Stop playing the sound.
+     */
+    stop() {
+      this.audioElement.loop = false;
+      this.loopCount = 0;
+      this.audioElement.currentTime = this.get_length();
+    }
+
+    /*
+     * Return the duration of the sound in seconds.
+     */
+    get_length() {
+      return this.audioElement.duration;
+    }
+
+    /*
+     * Pause the sound.
+     */
+    pause() {
+      this.audioElement.pause();
+    }
+
+    /*
+     * Unpause the sound if it was paused.
+     */
+    unpause() {
+      if (this.audioElement.paused) {
+        this.audioElement.play();
+      }
+    }
+
+    /*
+     * Fade out and eventually stop the sound over duration seconds.
+     */
+    fadeout(duration) {
+      if (typeof duration !== 'number') {
+        throw new TypeError('duration must be a positive number in seconds.');
+      }
+      if (duration <= 0) {
+        throw new RangeError('duration must be a positive number in seconds.');
+      }
+
+      this.audioElement.loop = false;
+      this.loopCount = 0;
+      animate(this.audioElement, duration, {volume: 0}, 'linear', () => this.stop());
+    }
+
+    _play_again() {
+      return (this.loopCount > 0);
+    }
+
+    /*
+     * Return the audio volume between 0 (meaning silent) and 1 (meaning full volume).
+     */
+    get_volume() {
+      return this.volume;
+    }
+
+    /*
+     * Set the audio volume between 0 (meaning silent) and 1 (meaning full volume).
+     */
+    set_volume(v) {
+      if (typeof v !== 'number') {
+        throw new TypeError('volume must be a number between 0 (meaning silent) and 1 (meaning full volume).');
+      }
+      this.volume = Math.max(0, Math.min(v, 1));
+      this.audioElement.volume = this.volume;
+    }
+  }
+
   return {
     draw: {
       line(start, end, color, width = 1, dashArray = null, dashOffset = 0) {
@@ -2566,7 +2718,7 @@ const screen = (function () {
         context.lineWidth = width;
         context.strokeStyle = parseColor(color);
         if (Array.isArray(dashArray)) {
-          dashArray = dashArray.filter(v => (typeof v === 'number'));
+          dashArray = dashArray.filter((v) => (typeof v === 'number'));
           if (dashArray.length > 0) {
             context.setLineDash(dashArray);
             if (typeof dashOffset === 'number') {
@@ -2616,7 +2768,7 @@ const screen = (function () {
         context.lineWidth = width;
         context.strokeStyle = parseColor(color);
         if (Array.isArray(dashArray)) {
-          dashArray = dashArray.filter(v => (typeof v === 'number'));
+          dashArray = dashArray.filter((v) => (typeof v === 'number'));
           if (dashArray.length > 0) {
             context.setLineDash(dashArray);
             if (typeof dashOffset === 'number') {
@@ -2679,7 +2831,7 @@ const screen = (function () {
         context.lineWidth = width;
         context.strokeStyle = parseColor(color);
         if (Array.isArray(dashArray)) {
-          dashArray = dashArray.filter(v => (typeof v === 'number'));
+          dashArray = dashArray.filter((v) => (typeof v === 'number'));
           if (dashArray.length > 0) {
             context.setLineDash(dashArray);
             if (typeof dashOffset === 'number') {
@@ -2689,9 +2841,10 @@ const screen = (function () {
         }
 
         context.beginPath();
-        let isFirst = true;
+        let isFirst = true,
+            x, y;
         for (let point of points) {
-          let [x=0, y=0] = point;
+          [x=0, y=0] = point;
           if (isFirst) {
             context.moveTo(x, y);
           }
@@ -2713,9 +2866,10 @@ const screen = (function () {
         context.fillStyle = parseColor(color);
 
         context.beginPath();
-        let isFirst = true;
+        let isFirst = true,
+            x, y;
         for (let point of points) {
-          let [x=0, y=0] = point;
+          [x=0, y=0] = point;
           if (isFirst) {
             context.moveTo(x, y);
           }
@@ -2738,7 +2892,7 @@ const screen = (function () {
         context.lineWidth = width;
         context.strokeStyle = parseColor(color);
         if (Array.isArray(dashArray)) {
-          dashArray = dashArray.filter(v => (typeof v === 'number'));
+          dashArray = dashArray.filter((v) => (typeof v === 'number'));
           if (dashArray.length > 0) {
             context.setLineDash(dashArray);
             if (typeof dashOffset === 'number') {
@@ -3041,7 +3195,7 @@ const screen = (function () {
           name;
       if (element != null) {
         // Populate the images global object
-        for (let e of Array.from(element.querySelectorAll('img'))) {
+        for (let e of element.querySelectorAll('img')) {
           name = e.dataset.name.trim();
           images[name] = e;
         }
@@ -3050,11 +3204,9 @@ const screen = (function () {
       // Populate the sounds global object
       element = document.querySelector(to_CSS_ID(soundsID));
       if (element != null) {
-        for (let e of Array.from(element.querySelectorAll('audio'))) {
+        for (let e of element.querySelectorAll('audio')) {
           name = e.dataset.name.trim();
-          sounds[name] = e;
-          e.addEventListener('play', soundStart);
-          e.addEventListener('ended', soundEnd);
+          sounds[name] = new AudioWrapper(e);
         }
       }
 
@@ -3102,8 +3254,8 @@ const screen = (function () {
        *
        * This can be fooled but then you are just dooming yourself.
        */
-      for (const element of document.querySelectorAll('script')) {
-        if (element.textContent.includes('keyboard[')) {
+      for (let e of document.querySelectorAll('script')) {
+        if (e.textContent.includes('keyboard[')) {
           usesKeyboard = true;
           break;
         }
@@ -3150,9 +3302,8 @@ const screen = (function () {
       }
 
       // Unpause any sounds that were previously playing
-      for (const n of playingSet) {
-        // HTMLMediaElement only has play() and pause() methods
-        sounds[n].play();
+      for (const n of AudioWrapper.inFlight) {
+        sounds[n].unpause();
       }
       music.unpause();
 
@@ -3174,7 +3325,7 @@ const screen = (function () {
       running = 0;
 
       // Pause any sounds that are currently playing
-      for (const n of playingSet) {
+      for (const n of AudioWrapper.inFlight) {
         sounds[n].pause();
       }
       music.pause();
@@ -3219,7 +3370,7 @@ const screen = (function () {
  */
 
 /*
- * A JavaScript wrapper around the Gamepad API based on pygame.joystick.
+ * Wrapper around the Gamepad API based on pygame.joystick.
  *
  * It only supports axes and buttons.
  */
@@ -3307,15 +3458,15 @@ class Joystick {
   constructor(index) {
     if (typeof index !== 'number') {
       throw new TypeError(
-        'index must be a Number in [0, Joystick.get_count()).');
+        'index must be a non-negative number in [0, Joystick.get_count()).');
     }
     if (index < 0) {
       throw new RangeError(
-        'index must be a Number in [0, Joystick.get_count()).');
+        'index must be a non-negative number in [0, Joystick.get_count()).');
     }
     if (Joystick._controllers.length <= index) {
       throw new RangeError(
-        'index must be a Number in [0, Joystick.get_count()).');
+        'index must be a non-negative number in [0, Joystick.get_count()).');
     }
 
     /*
@@ -3381,11 +3532,11 @@ class Joystick {
   get_axis(i, fallback = 0) {
     if (typeof i !== 'number') {
       throw new TypeError(
-        'i must be a non-negative Number less than the number of axes.');
+        'i must be a non-negative number less than the number of axes.');
     }
     if (i < 0) {
       throw new RangeError(
-        'i must be a non-negative Number less than the number of axes.');
+        'i must be a non-negative number less than the number of axes.');
     }
 
     let gamepad = this._getGamepad();
@@ -3414,11 +3565,11 @@ class Joystick {
   get_button(i, fallback = false) {
     if (typeof i !== 'number') {
       throw new TypeError(
-        'i must be a non-negative Number less than the number of buttons.');
+        'i must be a non-negative number less than the number of buttons.');
     }
     if (i < 0) {
       throw new RangeError(
-        'i must be a non-negative Number less than the number of buttons.');
+        'i must be a non-negative number less than the number of buttons.');
     }
 
     let gamepad = this._getGamepad();
@@ -3432,7 +3583,7 @@ class Joystick {
 }
 
 /*
- * A JavaScript wrapper around an ImageData object
+ * Wrapper around an ImageData object
  * to support scripts that rely on pixel manipulation.
  *
  * There is no pixel array or screen buffer to which you can write in
@@ -3447,7 +3598,7 @@ class Joystick {
  */
 class Surface {
   /*
-   * Pad a copy of the Array color to 4 elements.
+   * Return a padded copy of the Array color to 4 elements.
    */
   static _padColorArray(color) {
     let result = color.slice(0, 4);
