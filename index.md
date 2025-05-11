@@ -85,9 +85,9 @@ Chapter 10 - Four Extra Games
 - [AmazeBalls 2](retro-gaming/Part%2009%20-%20AmazeBalls%202/amazeballs2.html)
 - [AmazeBalls 3](retro-gaming/Part%2010%20-%20AmazeBalls%203/amazeballs3.html)
 
-[Read the Second Edition](https://magpi.raspberrypi.com/books/retro-gaming-raspberry-pi-2nd-edition)
+[Download the Second Edition as a PDF](https://github.com/raspberrypipress/released-pdfs/raw/main/retro-gaming-with-raspberry-pi-2nd-edition.pdf)
 
-[Read the First Edition](https://magpi.raspberrypi.com/books/retro-gaming)
+[Download the First Edition as a PDF](https://github.com/raspberrypipress/released-pdfs/raw/main/retro-gaming-with-raspberry-pi.pdf)
 
 ## Full games from Beginning Game Programming with Pygame Zero:
 
