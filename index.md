@@ -15,6 +15,13 @@
 
 [Read the Book](https://wireframe.raspberrypi.com/books/code-the-classics1)
 
+## Full games from [Code the Classics - Volume 2](https://github.com/thisarray/Code-the-Classics-Vol2):
+
+- [Beat Streets](Code-the-Classics-Vol2/beatstreets/beatstreets.html)
+- [Eggzy](Code-the-Classics-Vol2/eggzy/eggzy.html)
+- [Kinetix](Code-the-Classics-Vol2/kinetix/kinetix.html)
+- [Leading Edge](Code-the-Classics-Vol2/leadingedge/leadingedge.html)
+
 ## Full games from [Essentials - Make Games with Python](https://github.com/thisarray/Games-with-Pygame):
 
 - [Play hello in your browser.](Games-with-Pygame/Part%201/hello.html)
