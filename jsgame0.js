@@ -812,7 +812,6 @@ const music = (function () {
       hasMusicHook = false,
       next = null,
       paused = false,
-      stopped = true,
       volume = 1;
 
   /*
@@ -851,7 +850,6 @@ const music = (function () {
       current.volume = volume;
       current.play();
       paused = false;
-      stopped = false;
     },
 
     /*
@@ -915,15 +913,15 @@ const music = (function () {
      * Stop the music.
      */
     stop() {
-      if (!stopped) {
-        next = null;
-        if (current != null) {
-          current.loop = false;
-          current.currentTime = current.duration;
-        }
-        paused = false;
-        stopped = true;
+      if (current != null) {
+        current.loop = false;
+        current.currentTime = current.duration;
       }
+      current = null;
+      // Also, if the current track is ever stopped or changed,
+      // the queued track will be lost.
+      next = null;
+      paused = false;
     },
 
     /*
@@ -955,7 +953,7 @@ const music = (function () {
      * False otherwise.
      */
     is_playing() {
-      return ((!paused) && (!stopped));
+      return ((current != null) && (!paused));
     },
 
     /*
@@ -969,7 +967,8 @@ const music = (function () {
         throw new RangeError('duration must be a positive number in seconds.');
       }
 
-      if (current != null) {
+      if (music.is_playing()) {
+        current.loop = false;
         animate(current, duration, {volume: 0}, 'linear', () => music.stop());
       }
     },
@@ -1019,7 +1018,7 @@ const tone = (function () {
   let context = null;
 
   /*
-   * Lazily build the map and create the AudioContext as needed.
+   * Lazily create the AudioContext and build NOTE_MAP as needed.
    */
   function populateNotes() {
     if (context == null) {
@@ -2588,6 +2587,9 @@ const screen = (function () {
       this.audioElement.muted = false;
 
       this.loopCount = 0;
+      // Own copy of paused for when paused because
+      // this.audioElement.paused is true when stopped as well
+      this.paused = false;
       this.volume = 1;
       this.audioElement.volume = this.volume;
 
@@ -2609,6 +2611,7 @@ const screen = (function () {
         throw new RangeError('duration must be a positive number in seconds.');
       }
 
+      this.paused = false;
       if (loopCount < 0) {
         this.audioElement.loop = true;
         // Set this.loopCount to 1 so it will be 0 after decrementing
@@ -2643,6 +2646,7 @@ const screen = (function () {
     stop() {
       this.audioElement.loop = false;
       this.loopCount = 0;
+      this.paused = false;
       this.audioElement.currentTime = this.get_length();
     }
 
@@ -2657,15 +2661,19 @@ const screen = (function () {
      * Pause the sound.
      */
     pause() {
-      this.audioElement.pause();
+      if (!this.paused) {
+        this.audioElement.pause();
+        this.paused = true;
+      }
     }
 
     /*
      * Unpause the sound if it was paused.
      */
     unpause() {
-      if (this.audioElement.paused) {
+      if (this.paused) {
         this.audioElement.play();
+        this.paused = false;
       }
     }
 
@@ -2679,6 +2687,9 @@ const screen = (function () {
       if (duration <= 0) {
         throw new RangeError('duration must be a positive number in seconds.');
       }
+      if (this.paused) {
+        return;
+      }
 
       this.audioElement.loop = false;
       this.loopCount = 0;
@@ -2686,7 +2697,7 @@ const screen = (function () {
     }
 
     _play_again() {
-      return (this.loopCount > 0);
+      return ((!this.paused) && (this.loopCount > 0));
     }
 
     /*
