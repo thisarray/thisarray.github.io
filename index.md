@@ -17,6 +17,7 @@
 
 ## Full games from [Code the Classics - Volume 2](https://github.com/thisarray/Code-the-Classics-Vol2):
 
+- [Avenger](Code-the-Classics-Vol2/avenger/avenger.html)
 - [Beat Streets](Code-the-Classics-Vol2/beatstreets/beatstreets.html)
 - [Eggzy](Code-the-Classics-Vol2/eggzy/eggzy.html)
 - [Kinetix](Code-the-Classics-Vol2/kinetix/kinetix.html)
